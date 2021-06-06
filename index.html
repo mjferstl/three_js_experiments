@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jumping Box</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        button {
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+
+        .controls {
+            background-color: gray;
+        }
+
+        #info {
+            position: absolute;
+            top: 80px;
+            width: 50%;
+            left: 0%;
+            text-align: right;
+            z-index: 100;
+            display: block;
+            color: white;
+            padding-right: 10pt;
+        }
+    </style>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+
+<body>
+    <!-- <div class="controls">Controls</div> -->
+    <div class="mdc-touch-target-wrapper" style="background-color: white; position: relative; padding: 10pt;">
+        <button class="mdc-button mdc-button--touch" id="buttonStartStop">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__label" id="buttonStartStopText">Start</span>
+            <span class="mdc-button__touch"></span>
+        </button>
+    </div>
+    </div>
+
+    <div id="info">Start the animation :)</div>
+
+    <script src="src/three.js"></script>
+    <script src="src/WebGL.js"></script>
+    <script src="src/jquery-3.6.0.min.js"></script>
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
